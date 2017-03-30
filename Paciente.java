@@ -5,7 +5,7 @@
  * @author Michelle Bloomfield 
  *
  */
-public class Paciente {
+public class Paciente implements Comparable<Paciente>{
 
 	public String nombre;
 	public String sintoma;
@@ -69,5 +69,8 @@ public class Paciente {
 	public String getCodigo(){
 		return codigo;
 	}
+    public int compareTo(Paciente o) {
+        return codigo.compareToIgnoreCase(o.getCodigo());
+    }
 	
 }
