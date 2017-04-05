@@ -9,7 +9,7 @@ public class Test {
 		vector.add("2");
 		vector.add("3");
         assertEquals(3, vector.size());
-     
+        assertEquals(false, vector.isEmpty());
 	}
 
 } 			
